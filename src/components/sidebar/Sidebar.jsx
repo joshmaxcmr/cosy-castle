@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSignOutAlt } from "react-icons/fa";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import Button from "../button/Button";
@@ -9,13 +10,15 @@ const Sidebar = ({ isOpen }) => {
 
       <nav className="flex h-full flex-col items-center justify-between p-3">
         {/* Logo */}
-        <Logo />
+        <Logo isOpen={isOpen}/>
 
         {/* Nav Links */}
-        <NavLinks />
+        <NavLinks isOpen={isOpen}/>
+
         {/* Button */}
-        <Button>
-            <span>Déconnexion</span>
+        <Button className="flex w-full items-center gap-2">
+            <FaSignOutAlt className="text-lg"/>
+            {isOpen && <span className="text-sm">Déconnexion</span>}
         </Button>
       </nav>
     </div>

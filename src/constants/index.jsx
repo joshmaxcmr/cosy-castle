@@ -29,22 +29,22 @@ import {
 
 export const menuList = [
   {
-    name: "Dashboard",
+    name: "Tableau de bord",
     path: "/dashboard",
     icon: <FaTachometerAlt />,
   },
   {
-    name: "Customers",
+    name: "Clients",
     path: "/customers",
     icon: <FaUsers />,
   },
   {
-    name: "Delivery",
+    name: "Livraison",
     path: "/delivery",
     icon: <FaTruck />,
   },
   {
-    name: "Orders",
+    name: "Commandes",
     path: "/orders",
     icon: <FaShoppingCart />,
   },
@@ -54,12 +54,12 @@ export const menuList = [
     icon: <FaList />,
   },
   {
-    name: "Inventory",
+    name: "Inventaire",
     path: "/inventory",
     icon: <FaBox />,
   },
   {
-    name: "Reports",
+    name: "Rapports",
     path: "/reports",
     icon: <FaChartBar />,
   },
