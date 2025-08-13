@@ -1,11 +1,12 @@
 import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
 import { useState } from "react";
-
+import CartSideBar from "./components/cart/CartSideBar";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [isSiderOpen, setIsSiderOpen] = useState(true);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   // Dark mode
   const toggleDarkMode = () => {
@@ -15,6 +16,11 @@ const App = () => {
   // Sidebar
   const toggleSidebar = () => {
     setIsSiderOpen(!isSiderOpen);
+  };
+
+  // Cart
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
   };
 
   return (
@@ -31,12 +37,23 @@ const App = () => {
             toggleSidebar={toggleSidebar}
             darkMode={darkMode}
             toggleDarkMode={toggleDarkMode}
+            toggleCart={toggleCart}
+            isCartOpen={isCartOpen}
           />
-          {/* Main */}
-
-          {/* cartsidebar */}
+          
+          {/* Main content area */}
+          <main className="p-6">
+            {/* Add your main content here */}
+            
+          </main>
         </div>
       </div>
+
+      {/* Cart Sidebar */}
+      <CartSideBar isCartOpen={isCartOpen} toggleCart={toggleCart} />
+      
+      
+      
     </div>
   );
 };
