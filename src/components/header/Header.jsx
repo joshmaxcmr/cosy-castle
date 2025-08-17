@@ -17,12 +17,12 @@ const Header = ({
         <ToggleMenuButton toggleSidebar={toggleSidebar} />
 
         <div className="flex items-center gap-5 ">
-          <div className=" w-[400px] items-center gap-2 rounded-md bg-gray-100 p-2 dark:bg-gray-800 dark:text-gray-200 md:flex  ">
+          <div className=" w-[400px] items-center gap-2 rounded-md bg-gray-100 p-2 dark:bg-gray-800 dark:text-gray-200 md:flex hidden ">
             <IoSearchOutline className="text-2xl" />
             <input
               type="text"
               placeholder="Rechercher..."
-              className="w-full bg-transparent focus:outline-none text-black"
+              className="w-full bg-transparent focus:outline-none text-black "
             />
           </div>
 
