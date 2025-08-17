@@ -2,6 +2,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
 import { useState } from "react";
 import CartSideBar from "./components/cart/CartSideBar";
+import Main from "./components/main/Main";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,10 +43,8 @@ const App = () => {
           />
           
           {/* Main content area */}
-          <main className="p-6">
-            {/* Add your main content here */}
-            
-          </main>
+         <Main />
+         
         </div>
       </div>
 

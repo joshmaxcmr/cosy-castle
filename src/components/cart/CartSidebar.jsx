@@ -27,7 +27,7 @@ const CartSidebar = ({ isCartOpen, toggleCart }) => {
         <div className="border-t border-gray-200 p-4 dark:border-gray-700">
           <div className="flex justify-between items-center mb-4">
             <span className="font-semibold">Total:</span>
-            <span className="font-bold text-lg">0,00 €</span>
+            <span className="font-bold text-lg">0,00 Fcfa</span>
           </div>
           <Button className="w-full bg-[#ec2025] text-white hover:bg-red-700">
             Commander
