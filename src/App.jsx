@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import { useState } from "react";
 import CartSideBar from "./components/cart/CartSideBar";
 import Main from "./components/main/Main";
+import CartProvider from "./contexts/CartContext.jsx";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,6 +26,7 @@ const App = () => {
   };
 
   return (
+      <CartProvider>
     <div className={`${darkMode ? "dark" : ""} min-h-screen`}>
       <div className="flex min-h-screen bg-white text-black transition-all duration-300 ease-in-out dark:bg-gray-950 dark:text-white h-screen">
         <Sidebar isOpen={isSiderOpen} toggleSidebar={toggleSidebar} />
@@ -54,6 +56,7 @@ const App = () => {
       
       
     </div>
+      </CartProvider>
   );
 };
 

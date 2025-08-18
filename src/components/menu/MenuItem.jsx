@@ -1,9 +1,12 @@
 import React from 'react'
 import Button from "../button/Button";
+import {useCart} from "../../contexts/CartContext.jsx";
 
 
 const MenuItem = ({menuItem}) => {
-    const inCart = false;
+
+    const {cartItems, addItemToCart, decreaseItemQuantity} = useCart();
+    const inCart = cartItems.find((item) => item.name === menuItem.name);
     return (
         <div
             className=" flex cursor-pointer flex-col gap-6 rounded-lg bg-white p-5 text-gray-600 transition-a duration-300 ease-in-out hover:outline hover: outline-[#ec2025] dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600">
@@ -19,11 +22,12 @@ const MenuItem = ({menuItem}) => {
             {/* Bouton d'ajout card */}
 
             {
-                inCart ?  <div className="flex items-center justify-between rounded-lg p-1 px-5 dark:bg-gray-500 dark:text-gray-200">
-                <Button className="size-8 rounded-full font-bold ">-</Button>
-                <span>0</span>
-                <Button className="size-8 rounded-full font-bold">+</Button>
-            </div> : <Button className="w-full ">Ajouter au panier</Button>
+                inCart ? <div
+                    className="flex items-center justify-between rounded-lg p-1 px-5 dark:bg-gray-500 dark:text-gray-200">
+                    <Button onClick={() => decreaseItemQuantity(menuItem.name)} className="size-8 rounded-full font-bold ">-</Button>
+                    <span>{inCart.quantity <10 ? `0${inCart.quantity}` :  inCart.quantity}</span>
+                    <Button onClick={() => addItemToCart(menuItem)} className="size-8 rounded-full font-bold">+</Button>
+                </div> : <Button onClick={() => addItemToCart(menuItem)} className="w-full ">Ajouter au panier</Button>
             }
         </div>
 
