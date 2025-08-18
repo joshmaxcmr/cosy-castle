@@ -8,7 +8,7 @@
 
 *Une application moderne de tableau de bord pour restaurant avec interface intuitive et gestion de panier*
 
-[🚀 Demo Live](#) • [📖 Documentation](#fonctionnalités) • [🛠️ Installation](#installation)
+
 
 </div>
 
@@ -153,21 +153,18 @@ ComponentName/
 
 
 
-## 📄 Licence
 
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👨‍💻 Auteur
 
 **Développé avec ❤️ par YOUANDEU JOHANN**
 
-- GitHub: [@votre-username](joshmaxcmr)
-- LinkedIn: [Votre Profil](www.linkedin.com/in/johann-youandeu-8b1b26205)
+
 
 ---
 
 <div align="center">
 
-**⭐ N'hésitez pas à donner une étoile si ce projet vous a plu !**
+
 
 </div>
