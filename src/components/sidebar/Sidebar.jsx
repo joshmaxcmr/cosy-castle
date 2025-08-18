@@ -6,7 +6,7 @@ import Button from "../button/Button";
 
 const Sidebar = ({ isOpen }) => {
   return (
-    <div className={'${isOpen ? "w-44" : "w-16"} fixed left-0 top-0 h-full overflow-x-hidden text-gray-900 translation-all duration-500 ease-in-out dark:text-white'}>
+    <div className={`${isOpen ? "w-44" : "w-16"} fixed left-0 top-0 h-full overflow-x-hidden bg-white dark:bg-gray-900 text-gray-900 transition-all duration-500 ease-in-out dark:text-white shadow-lg`}>
 
       <nav className="flex h-full flex-col items-center justify-between p-3">
         {/* Logo */}
