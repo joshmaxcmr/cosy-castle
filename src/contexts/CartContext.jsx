@@ -46,8 +46,11 @@ const CartProvider = ({children}) => {
     }
 
     // calculer le total du panier
+    const totalAmount = cartItems.reduce(
+        (total, item) => total + item.amount * item.quantity, 0
+    )
     return (
-        <CartContext.Provider value={{cartItems, addItemToCart, removeItemFromCart, decreaseItemQuantity}}>
+        <CartContext.Provider value={{cartItems, addItemToCart, removeItemFromCart, decreaseItemQuantity, totalAmount}}>
             {children}
         </CartContext.Provider>
     );

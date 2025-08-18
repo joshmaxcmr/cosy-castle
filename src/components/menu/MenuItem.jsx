@@ -16,7 +16,7 @@ const MenuItem = ({menuItem}) => {
             </div>
             <div>
                 <h3 className="text-xl font-bold">{menuItem.name}</h3>
-                <p className="font-semibold text-[#ec2025]">${menuItem.amount}</p>
+                <p className="font-semibold text-[#ec2025]">{menuItem.amount} Fcfa </p>
             </div>
 
             {/* Bouton d'ajout card */}

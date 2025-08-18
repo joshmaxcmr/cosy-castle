@@ -67,22 +67,22 @@ export const menuList = [
 
 export const categories = [
   {
-    name: "All",
+    name: "Tout",
     quantities: 200,
     image: allIcon,
   },
   {
-    name: "Breakfast",
+    name: "Petit-déjeuner",
     quantities: 50,
     image: breakfastIcon,
   },
   {
-    name: "Lunch",
+    name: "Déjeuner",
     quantities: 50,
     image: lunchIcon,
   },
   {
-    name: "Dinner",
+    name: "Dîner",
     quantities: 50,
     image: dinnerIcon,
   },
@@ -92,17 +92,17 @@ export const categories = [
     image: dessertIcon,
   },
   {
-    name: "Drinks",
+    name: "Boissons",
     quantities: 50,
     image: drinksIcon,
   },
   {
-    name: "Snacks",
+    name: "Collations",
     quantities: 50,
     image: snacksIcon,
   },
   {
-    name: "Appetizers",
+    name: "Entrées",
     quantities: 50,
     image: appetizersIcon,
   },
@@ -110,17 +110,17 @@ export const categories = [
 
 export const menuItems = [
   {
-    name: "Mixed Platter",
+    name: "Assiette mixte",
     amount: 50,
     image: MixPlatter,
   },
   {
-    name: "Pancakes",
+    name: "Poulet grillé",
     amount: 30,
     image: Pancakes,
   },
   {
-    name: "Grilled Chicken",
+    name: "Pancakes",
     amount: 40,
     image: GrilledChicken,
   },
@@ -130,12 +130,12 @@ export const menuItems = [
     image: Steak,
   },
   {
-    name: "Chocolate Cake",
+    name: "Gâteau au chocolat",
     amount: 30,
     image: ChocolateCake,
   },
   {
-    name: "Lemonade",
+    name: "Limonade",
     amount: 20,
     image: Lemonade,
   },
@@ -145,7 +145,7 @@ export const menuItems = [
     image: Nachos,
   },
   {
-    name: "Garlic Bread",
+    name: "Pain à l'ail",
     amount: 10,
     image: GarlicBread,
   },
