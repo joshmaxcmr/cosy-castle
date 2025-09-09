@@ -1,7 +1,7 @@
 import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
 import { useState } from "react";
-import CartSideBar from "./components/cart/CartSideBar";
+import CartSideBar from "./components/cart/CartSidebar";
 import Main from "./components/main/Main";
 import CartProvider from "./contexts/CartContext.jsx";
 
